@@ -1,0 +1,129 @@
+:root {
+    --primary-pale-blue: hsl(255, 100%, 94%);
+    --primary-bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: var(--very-pale-blue);
+}
+
+#order-summary-card {
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 550px;
+    width: 375px;
+    overflow: hidden;
+    box-shadow: 0 5px 30px var(--desaturated-blue);
+}
+
+.order-summary-card__hero-image {
+    width: 100%;
+}
+
+/* Card Content */
+.order-summary-card__content {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-summary-card__content h1 {
+    margin: 0;
+}
+
+.order-summary-card__content p {
+    text-align: center;
+    color: var(--desaturated-blue);
+}
+
+/* Card Content Plan */
+.order-summary-card__content-plan {
+    display: flex;
+    padding: .5rem 1rem;
+    align-items: center;
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--very-pale-blue);
+}
+
+.order-summary-card__content-plan-description {
+    flex: 1 0 auto;
+    padding: 10px;
+}
+
+.order-summary-card__content-plan-description h2 {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.order-summary-card__content-plan-price {
+    color: var(--desaturated-blue);
+}
+
+.order-summary-card__content-plan a {
+    color: var(--primary-bright-blue);
+    font-weight: 700;
+}
+
+.order-summary-card__content-plan a:hover {
+    text-decoration: none;
+}
+
+.order-summary-card__content-btn {
+    width: 100%;
+    background-color: var(--primary-bright-blue);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 500;
+    margin: 1em 0;
+    cursor: pointer;
+    font-size: inherit;
+    box-shadow: 0 5px 30px var(--desaturated-blue);
+}
+
+.order-summary-card__content-btn:hover {
+    opacity: .65;
+}
+
+.order-summary-card__content > a {
+    font-weight: 700;
+    color: var(--desaturated-blue);
+    text-decoration: none;
+}
+
+.order-summary-card__content > a:hover {
+    color: #000;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
