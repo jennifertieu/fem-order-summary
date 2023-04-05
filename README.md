@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Order Summary Screenshot](./order-summary-screenshot.jpg)
+![Order Summary Screenshot](./order-summary-screenshot.png)
 
 ### Links
 
